@@ -182,15 +182,16 @@
         <h1 class="display-5 fw-bold text-center text-white" style="font-family: 'Maitree', serif; font-weight: 800;font-style: normal;">
           Get in touch
         </h1>
-        <form class="row g-3">
+        <form class="row g-3" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="976fc4da-a613-476f-a933-43dc072e1d33">
           <div class="col-6">
-            <input type="text" class="form-control" id="inputName" placeholder="Name">
+            <input type="text" name="Name" class="form-control" id="inputName" placeholder="Name">
           </div>
           <div class="col-md-6">
-            <input type="email" class="form-control" placeholder="Email" id="inputEmail4">
+            <input type="email" name="Email" class="form-control" placeholder="Email" id="inputEmail4">
           </div>
           <div class="col-12">
-            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="5"></textarea>
+            <textarea class="form-control" name="Message" id="exampleFormControlTextarea1" placeholder="Message" rows="5"></textarea>
           </div>
           <div class="col-12 text-center">
             <button type="submit" class="btn btn-primary">Send</button>
